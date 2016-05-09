@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#showWindow{
+			background-color: yellow;
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			 var oShowWindow=document.getElementById("showWindow");
+			document.getElementById("btnShow" ).onclick=function (){
+				oShowWindow.style.display="block";
+			}
+			document.getElementById("btnHide" ).onclick=function (){
+				oShowWindow.style.display="none";
+			}
+			document.getElementById("labelShow" ).onclick=function (){
+				oShowWindow.style.display="block";
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<input id="btnShow" type="button" value="显示">
+	<input id="btnHide" type="button" value="隐藏">
+	<strong id="labelShow">点击我也能显示</strong>
+	<div id="showWindow">
+	</div>
+
+</body>
+</html>

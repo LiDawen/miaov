@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#showWindow{
+			border:3px solid #000;
+			width: 100px;
+			height: 100px;
+			background-color: #FFF;
+			border-radius: 20px;
+		}
+
+		#showSet{
+			border:3px solid #000;
+			position: absolute;
+			top:300px;
+			left: 400px;
+			display: none;
+			border: 10px solid rgb(140,140,140);
+			background-color: #FFF;
+
+
+		}
+		.btn{
+			background-color: rgb(230,230,230);
+			border: 1px solid;
+		}
+		#set{
+			background-color: red;
+			border: 1px solid ;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function (){
+			var oShowSet=document.getElementById("showSet");
+			var oShowWindow=document.getElementById("showWindow");
+			document.getElementById("set").onclick=function (){
+				oShowSet.style.display="block";
+				document.getElementById("body").style.background="rgb(110,110,110)";
+			}
+			document.getElementById("ok").onclick=function (){
+				oShowSet.style.display="none";
+				document.getElementById("body").style.background="#FFF";
+			}
+			document.getElementById("resume").onclick=function (){
+				oShowWindow.style.width="100px";
+				oShowWindow.style.height="100px";
+				oShowWindow.style.background="#FFF";
+			}
+			document.getElementById("btnRed").onclick=function (){
+				oShowWindow.style.background="red";
+			}
+			document.getElementById("btnYellow").onclick=function (){
+				oShowWindow.style.background="yellow";
+			}
+			document.getElementById("btnBlue").onclick=function (){
+				oShowWindow.style.background="blue";
+			}
+			document.getElementById("width200").onclick=function (){
+				oShowWindow.style.width="200px";
+			}
+			document.getElementById("width300").onclick=function (){
+				oShowWindow.style.width="300px";
+			}
+			document.getElementById("width400").onclick=function (){
+				oShowWindow.style.width="400px";
+			}	
+			document.getElementById("height200").onclick=function (){
+				oShowWindow.style.height="200px";
+			}
+			document.getElementById("height300").onclick=function (){
+				oShowWindow.style.height="300px";
+			}
+			document.getElementById("height400").onclick=function (){
+				oShowWindow.style.height="400px";
+			}
+		}
+	</script>
+</head>
+<body id="body">
+	<strong>请为下面的DIV设置样式：</strong>
+	<button id="set">点击设置</button>
+	<div id="showWindow">
+	</div>
+	<div id="showSet" >
+
+		<div >
+			请选择背景色：
+			<div >
+				<button id="btnRed" class="btn">红</button>
+				<button id="btnYellow" class="btn">黄</button>
+				<button id="btnBlue" class="btn">蓝</button>
+			</div>
+		</div>
+
+		<div>		
+			请选择宽：			
+			<div >
+				<button id="width200" class="btn">200</button>
+				<button id="width300" class="btn">300</button>
+				<button id="width400" class="btn">400</button>
+			</div>
+		</div>
+		<div>
+			请选择高：
+			<div >
+				<button id="height200" class="btn">200</button>
+				<button id="height300" class="btn">300</button>
+				<button id="height400" class="btn">400</button>
+			</div>
+		</div>
+		<button id="resume">恢复</button>
+		<button id="ok">确定</button>
+	</div>
+</body>
+</html>

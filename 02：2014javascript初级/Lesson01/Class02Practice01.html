@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		#dialog{
+			width:300px;
+			height: 400px;
+			border: 1px solid;
+			background: #f0f0f0;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function () {
+			var oTextInput=document.getElementById("TestInput"); 
+			var oDialog=document.getElementById("dialog"); 
+			var oName=document.getElementById("name"); 
+
+			document.getElementById("btnSummit").onclick=function (){
+				//alert(oTextInput.value);
+				//alert(oDialog.innerHTML);
+				oDialog.innerHTML+=oName.innerHTML+oTextInput.value+"<br>"
+
+			}
+
+
+
+		}
+
+
+
+	</script>
+	
+</head>
+<body>
+<div id="dialog"></div>
+	<span id="name">秒味：</span>
+	<input type="text" id="TestInput"></input>
+	<input type="button" id="btnSummit" value="提交"></input>
+</body>
+</html>
