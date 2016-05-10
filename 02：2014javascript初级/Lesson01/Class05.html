@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	window.onload=function (){
+		var oAttrName=document.getElementById("attrName");
+		var oAttrValue=document.getElementById("attrValue");
+
+		var oSquare=document.getElementById("square");
+		document.getElementById("btn").onclick=function (){
+
+			oSquare.style[oAttrName.value]=oAttrValue.value;
+		}
+	}
+
+
+	</script>
+</head>
+<body>
+	<span>请输入属性名称：</span>
+	<input type="text" id="attrName"></input><br/>
+	<span>请输入属性值：</span>
+	<input type="text" id="attrValue"></input>
+	<input type="button" value="确定" id="btn"> 
+
+	<div id="square"></div>
+</body>
+</html>
