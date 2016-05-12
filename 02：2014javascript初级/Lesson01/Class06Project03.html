@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function (){
+			var oFlag=true;
+			var oPic=document.getElementById("pic");
+			oPic.onclick=function (){
+				if(oFlag){
+					oPic.src="img/4.jpg";
+					oFlag=false;
+				}else{
+
+					oPic.src="img/2.jpg";
+					oFlag=true;
+				}
+			}	
+		}
+	</script>
+</head>
+<body>
+	<img src="img/2.jpg"  width="200px" id="pic">
+</body>
+</html>
