@@ -1,0 +1,37 @@
+#header { width:960px;height: 30px; margin:0 auto;border-radius: 0 0 6px 6px;}
+#nav{ width:960px;height: 30px; margin:0 auto; background: #ffc}
+#search{ width: 958px; height: 114px;margin:0 auto; border:1px solid #dbdbdb; border-radius: 6px;
+}
+.content{width:960px; margin: 0 auto;
+}
+.main{ width: 710px;
+}
+.main_option{
+	width:350px; background:#FFc;height: 200px;
+}
+.main_section{ width: 318px; height: 200px; padding: 0 15px; border:1px solid #dbdbdb; border-radius: 6px;margin-bottom: 10px;
+}
+.main_ad{ border-radius:6px ;background: #FFC ;overflow: hidden;margin-bottom: 10px;height: 90px}
+.side{ width: 240px; 
+
+}
+#footer {
+
+}
+/*public*/
+.clear {zoom:1;}
+.clear:after{content:'';display: block;clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.gradient{
+	background: linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: -moz-linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: -webkit-linear-gradient(top,#FFFFFF,#f8f8f8);
+	background: -ms-linear-gradient(top,#FFFFFF,#f8f8f8);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
+	+background:#f9f9f9;
+}
+/* debug*/
+* {
+	text-align: center;
+}
