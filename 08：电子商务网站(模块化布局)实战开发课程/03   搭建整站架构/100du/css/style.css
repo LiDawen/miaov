@@ -1,0 +1,30 @@
+.header {
+}
+.nav{
+
+}
+.search{
+
+}
+.content{
+
+}
+#main{
+
+}
+#side{
+
+}
+.footer {
+
+}
+/*public*/
+.clear {zoom:1;}
+.clear:after{content:'';display: block;clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+/* debug*/
+* {
+	border: 1px solid	#888;
+	text-align: center;
+}
