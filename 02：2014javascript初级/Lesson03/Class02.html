@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	li {
+		background: url(img/normal.png);
+		width: 114px;
+		height: 140px;
+		float: left;
+		list-style: none;
+		margin-left: 30px;
+	}
+	input {
+		width:300px;
+		height: 300px; 
+		font-size: 200px;
+		margin-left: 30px;
+
+	}
+
+	</style>
+	<script type="text/javascript">
+	var array=["A","B","C","D"];
+	window.onload=function (){
+		var aBtn=document.getElementsByTagName("input");
+		for (var i = 0; i<aBtn.length; i++) {
+			aBtn[i].state=0;
+			aBtn[i].onclick=function(){
+			this.state=this.state+1;
+			if(this.state>3){
+				this.state=0;
+			}
+			this.value=array[this.state];
+
+
+			}
+		}
+	}
+
+	</script>
+</head>
+<body>
+<input type="button" value="A">
+<input type="button" value="A">
+<input type="button" value="A">
+</body>
+</html>
