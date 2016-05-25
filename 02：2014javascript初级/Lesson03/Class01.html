@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	li {
+		background: url(img/normal.png);
+		width: 114px;
+		height: 140px;
+		float: left;
+		list-style: none;
+		margin-left: 30px;
+	}
+
+	</style>
+	<script type="text/javascript">
+	window.onload=function (){
+		var aBtn=document.getElementsByTagName("li");
+		for (var i = 0; i<aBtn.length; i++) {
+			aBtn[i].state="normal";
+			aBtn[i].onclick=function(){
+				if(this.state=="normal"){
+					this.state="active";
+					this.style.backgroundImage="url('img/active.png')";
+				}else{
+					this.state="normal";
+					this.style.background="url(img/normal.png)";
+				}
+
+
+			}
+		}
+	}
+
+	</script>
+</head>
+<body>
+	<ul>
+	<li></li>		
+	<li></li>		
+	<li></li>		
+
+
+	</ul>
+
+</body>
+</html>
