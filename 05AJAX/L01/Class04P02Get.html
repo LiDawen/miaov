@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function getData(){
+			var oXHR=null;
+			if(window.XMLHttpRequest){
+				oXHR=new XMLHttpRequest();
+			}else{
+				oXHR=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			oXHR.open('get','1.get.php?username=lidawen&age=10',true);
+			oXHR.send();
+			oXHR.onreadystatechange=function(){
+				if(oXHR.readyState==4){
+					alert(oXHR.responseText);
+				}
+
+			}
+
+
+		}
+
+
+	</script>
+</head>
+<body>
+<input type="button" onclick="getData();" value="click">
+</body>
+</html>

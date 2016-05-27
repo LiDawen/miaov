@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function getData(){		
+			var xhr=null;
+
+			try{
+				xhr=new XMLHttpRequest();
+			}catch (e){
+				xhr=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+
+			xhr.open('get','1.txt',true);
+			xhr.send();
+
+			xhr.onreadystatechange=function (){
+				if (xhr.readyState == 4){
+					alert(xhr.responseText);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="button" onclick="getData()" value="get data">
+
+</body>
+</html>
